@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/main.css">
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <header id="cabecalho" class="cabecalho">
+        <div class="cabecalho">
+            <div class="logo">
+                <img src="img/logo.png">
+            </div>
+        </div>
+    </header>
+
+    <div class="formulario">
+        <form class="form">
+            <div class="descricao">
+                <h3>Identifique-se!</h3>
+                <p>Preencha corretamente os dados abaixo, você irá utilizá-los para acesso e conferência do status
+                    de agendamento.</p>
+            </div>
+            <section>
+                <div class="origin">
+                    <label for="pais" class="indicacao">País de origem</label><br>
+                    <input type="text" name="pais" id="pais" required><br>
+                    <label for="pais" class="ajuda">Informe seu país de origem</label>
+                </div>
+                <div class="cpf">
+                    <label for="cpf" class="indicacao">CPF</label><br>
+                    <input type="text" name="cpf" id="cpf" required><br>
+                    <label for="cpf" class="ajuda">Digite sem ponto ou traços</label>
+                </div>
+                <div class="cartao">
+                    <label for="cartao" class="indicacao">Cartão Nacional de Saúde</label><br>
+                    <input type="text" name="cartao" id="cartao"><br>
+                    <label for="cartao" class="ajuda">Informe o número do seu Cartão Nacional de Saúde</label>
+                </div>
+                <div class="nome">
+                    <label for="nome" class="indicacao">Nome Completo</label><br>
+                    <input type="text" name="nome" id="nome" required><br>
+                    <label for="nome" class="ajuda">Informe seu nome completo (sem acentuação)</label>
+                </div>
+                <div class="data">
+                    <label for="data" class="indicacao">Data de nascimento</label><br>
+                    <input type="date" name="data" id="data" required><br>
+                    <label for="data" class="ajuda">Informe sua data de nascimento</label>
+                </div>
+                <div class="mae">
+                    <label for="mae" class="indicacao">Nome da mãe</label><br>
+                    <input type="text" name="mae" id="mae" required><br>
+                    <label for="mae" class="ajuda">Informe o nome completo de sua mãe (sem acentuação)</label>
+                </div>
+            </section>
+            <aside>
+                <div class="contato">
+                    <label for="contato" class="indicacao">Fone para contato</label><br>
+                    <input type="tel" name="contato" id="contato" required><br>
+                    <label for="contato" class="ajuda">Informe DDD + Número de telefone</label>
+                </div>
+                <div class="sexo">
+                    <label for="sexo" class="indicacao">Sexo</label><br>
+                    <select name="sexo" id="sexo" required>
+                        <option value="vazio" selected></option>
+                        <option value="masculino">Masculino</option>
+                        <option value="feminino">Feminino</option>
+                        <option value="outro">Outro</option>
+                    </select><br>
+                    <label for="sexo" class="ajuda">Clique e selecione uma das opções apresentadas</label>
+                </div>
+                <div class="cor">
+                    <label for="cor" class="indicacao">Cor</label><br>
+                    <select name="cor" id="cor" required>
+                        <option value=""></option>
+                        <option value="branco">Branco</option>
+                        <option value="preto">Preto</option>
+                        <option value="pardo">Pardo</option>
+                        <option value="amarelo">Amarelo</option>
+                        <option value="outros">Outros</option>
+                    </select><br>
+                    <label for="cor" class="ajuda">Clique e selecione uma das opções apresentadas</label>
+                </div>
+                <div class="informacao">
+                    <label for="informacao" class="indicacao">Informações profissionais</label><br>
+                    <input type="text" name="informacao" id="informacao" required><br>
+                    <label for="informacao" class="ajuda">Informe sua área de atuação profissional (caso tenha)</label>
+                </div>
+            </aside>
+        </form>
+        <div class="botao">
+            <button type="submit">Enviar</button>
+        </div>
+    </div>
+</body>
+
+</html>

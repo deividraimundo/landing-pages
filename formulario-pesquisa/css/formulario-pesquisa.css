@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	font-family: Arial, sans-serif;
+	font-size: 13pt;
+	background-color: azure;
+}
+
+header.cabecalho {
+	width: 100%;
+	height: 80px;
+}
+
+main {
+	margin: 0 auto;
+	position: relative;
+	height: 900px;
+}
+
+p.titulo {
+	margin: 0 auto;
+	text-align: center;
+	font-size: 400%;
+	background-image: linear-gradient(to bottom, #394040, gray, black);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	color: black;
+}
+
+/*configurando o conteudo e o formulário*/
+div.interface {
+	background-color: #d9d9e9;
+	width: 50%;
+	height: 100%;
+	margin: 0 auto;
+	border: 1px outset;
+	border-radius: 10px;
+}
+
+div.formulario {
+	width: 93%;
+	margin: 0 auto;
+}
+
+input#cNome, input#cMail, input#cData {
+	width: 94.5%;
+	margin: 0 auto;
+}
+
+select{
+	width: 100%;
+	margin: 0 auto;
+}
+
+textarea {
+	width: 94.5%;
+	margin: 0 auto;
+	border-radius: 10px;
+}
+
+input, select, button {
+	border-radius: 50px;
+}
+
+input, select, option, textarea {
+	border: none;
+	font-weight: bold;
+	padding: 6px 16px;
+}
+
+input#cData, select {
+	cursor: pointer;
+}
+
+input#cEnviar {
+	width: 100%;
+	height: 100%;
+	background-color: #f3f3f3;
+	cursor: pointer;
+}
+

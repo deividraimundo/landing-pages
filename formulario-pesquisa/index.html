@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/formulario-pesquisa.css">
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+		<title>formulario</title>
+	</head>
+	<body>
+		<header class="cabecalho">
+			<main>
+				<div class="topo">
+					<p class="titulo">Formulário de pesquisa</p>
+				</div>
+			</main>
+		</header>
+		<main>
+
+		<div class="interface">
+			<div class="formulario">
+			<form action="formulario-pesquisa.html">
+				
+				<p><label>Nome</label><br>
+				<input type="text" name="tNome" id="cNome" size="55" maxlength="50" placeholder="Nome completo"></p>
+
+				<p><label>E-mail</label><br>
+				<input type="email" name="tMail" id="cMail" size="55" maxlength="50" placeholder="E-Mail"></p>
+
+				<p><label>Data de nascimento</label><br>
+				<input type="date" name="tData" id="cData"></p>
+			
+				<p><label>Qual opção descreve melhor sua função atual?</label><br>
+				<select name="tSelecao" id="cSelecao">
+					<option selected>Escolha um opção</option>
+					<option>Estudante</option>
+					<option>Trabalho em tempo integral</option>
+					<option>Aprendiz em tempo integral</option>
+					<option>Prefere não falar</option>
+					<option>Outro</option>
+				</select></p>
+
+
+				<p><label>Você recomendaria este site à um amigo?</label><br>
+				<input type="radio" name="tRecomendacao" id="cSim">
+				<label for="cSim">Com certeza</label><br>
+
+				<input type="radio" name="tRecomendacao" id="cTalvez">
+				<label for="cTalvez">Talvez</label><br>
+
+				<input type="radio" name="tRecomendacao" id="cNao">
+				<label for="cNao">Não recomendaria</label></p>
+
+				<p><label>Qual seu recurso favorito deste site?</label><br>
+				<select name="tRecurso" id="cRecurso">
+					<option selected>Selecione uma opção</option>
+					<option>Desafios</option>
+					<option>Projetos</option>
+					<option>Comunidade</option>
+				</select></p>
+
+				<p><label>O que você gostaria que melhorasse? (Marque todas as opções aplicáveis)</label><br>
+				<input type="checkbox" name="tFrontEnd">
+				<label>Projetos de Front-End</label><br>
+
+				<input type="checkbox" name="tBackEnd">
+				<label>Projetos de Back-End</label><br>
+
+				<input type="checkbox" name="tDados">
+				<label>Visualização de dados</label><br>
+
+				<input type="checkbox" name="tDesafios">
+				<label>Desafios</label><br>
+
+				<input type="checkbox" name="tComunidade">
+				<label>Comunidade de código aberto</label><br>
+
+				<input type="checkbox" name="tVideos">
+				<label>Vídeos</label><br>
+
+				<input type="checkbox" name="tOutros">
+				<label>Outros</label>
+				<input type="text" name="tOutro" id="cOutro" size="14" maxlength="20" placeholder="Diga o que..."></p>
+
+				<p>Algum comentário ou sugestão?<br>
+				<textarea name="tTexto" cols="55" rows="5" placeholder="Deixe aqui seu comentário..."></textarea>
+				</p>
+
+				<input type="submit" value="Enviar" id="cEnviar">
+			</form>
+		</div>
+		</div>
+	</main>
+	</body>
+</html>
